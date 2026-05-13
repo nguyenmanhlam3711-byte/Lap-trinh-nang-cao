@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Feaftures\Sinhvien\Commands\Delete\" />
+    <Folder Include="Feaftures\Sinhvien\Queries\Getbyid\" />
+    <Folder Include="Feaftures\Sinhvien\Queries\Getlist\" />
+    <Folder Include="Feaftures\Sinhvien\Commands\Update\" />
+    <Folder Include="Feaftures\Sinhvien\Queries\GetWithPagingatedList\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="14.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\QuanLySinhVien.Domain\QuanLySinhVien.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
